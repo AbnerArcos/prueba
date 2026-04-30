@@ -70,9 +70,10 @@ h1 {
 
 .item img {
   width: 80px;
-  height: 80px;
+  height: 80px;        /* 🔥 tamaño fijo */
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: cover;   /* 🔥 recorta sin deformar */
+  flex-shrink: 0;      /* evita que se encoja */
 }
 
 .item h3 {
